@@ -1,0 +1,16 @@
+
+" 插件列表 {{{
+
+" Plugin 'vim-scripts/winmanager'
+" Plugin 'vim-scripts/Vim-JDE'
+" Plugin 'vim-scripts/OmniCppComplete'
+" Plugin 'vim-scripts/JavaKit'
+" Plugin 'vim-scripts/yavdb'
+" Plugin 'vim-scripts/maven-ide'
+" Plugin 'vim-scripts/taglist.vim'
+" Plugin 'vim-scripts/gvimfullscreen_win32'
+" Plugin 'vim-scripts/VimTweak'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'Shougo/vimshell.vim'
+
+" }}}

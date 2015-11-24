@@ -1,0 +1,108 @@
+
+" General Config {{{
+" 禁止光标闪烁
+set gcr=a:block-blinkon0
+
+language messages zh_CN.utf-8
+" set mouse=""
+" set mousehide=true
+" 不显示提示消息
+set shortmess=atI
+
+let g:indent_guides_enable_on_vim_startup = 0
+let g:loaded_textobj_indent = 1
+
+" 清除特殊键的颜色
+hi clear SpecialKey
+" 取消语法检查
+set nospell
+" 隐藏不可见字符
+set nolist
+
+" 设置session options
+set sessionoptions+=help
+set guioptions-=m
+set guioptions-=r
+set guioptions-=L
+
+set guifont=Consolas:h11
+" }}}
+
+" Key Mapping {{{
+"  窗口间跳转
+let g:spf13_no_easyWindows = 1
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-L> <C-W>l
+map <C-H> <C-W>h
+" map <C-X> <C-W>_
+map <Leader>w <C-W>w
+imap <Leader>j  <C-X><C-U>
+
+" 重映射ESC
+imap ;; <ESC>
+cmap ;; <ESC>
+
+if has('win32')
+    map <M-k> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
+    imap <M-k> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
+    autocmd GUIEnter *  call libcallnr("vimtweak.dll", "SetAlpha", 240)
+endif
+
+
+" }}}
+
+" Plugin Config {{{
+
+" airline status {{{
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_theme= 'powerlineish'
+let g:airline_left_sep = '►'
+let g:airline_left_alt_sep = '§'
+let g:airline_right_sep = '◄'
+let g:airline_right_alt_sep = '§'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = 'Љ'
+" }}}
+
+" NERDTree {{{
+let NERDTreeDirArrows=0
+let NERDTreeKeepTreeInNewTab=0
+let NERDTreeShowHidden=0
+" let g:nerdtree_tabs_open_on_console_startup = 1
+" }}}
+
+" Tagbar {{{
+"let Tlist_Ctags_Cmd = 'ctags.exe'
+let Tlist_Use_Right_Window = 1
+" let g:tagbar_left=0
+let g:tagbar_width=25
+" let g:tagbar_vertical=15
+let g:tagbar_iconchars = ['►', '▼']
+" }}}
+
+" neocomplete {{{
+" disable neocomplete
+let g:neocomplete#enable_at_startup=0
+" }}}
+
+" vjde {{{
+let g:vjde_lib_path="$JAVA_HOME/jre/lib/rt.jar"
+let g:vjde_javadoc_path="/home/tom/doc/java/docs/api"
+let g:vjde_template_loaded = 1
+" }}}
+
+" ctrlp {{{
+let g:ctrlp_by_filename = 1
+let g:ctrlp_regexp = 1
+let g:ctrlp_show_hidden = 0
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+    \ 'file': '\v\.(exe|so|dll|class)$'
+    \ }
+" }}}
+
+" }}}
+
