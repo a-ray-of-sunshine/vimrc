@@ -104,5 +104,9 @@ let g:ctrlp_custom_ignore = {
     \ }
 " }}}
 
+" vimshell {{{
+   let g:vimshell_prompt = "[vimshell]$ "
+" }}}
+
 " }}}
 
