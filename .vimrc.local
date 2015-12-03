@@ -108,5 +108,9 @@ let g:ctrlp_custom_ignore = {
    let g:vimshell_prompt = "[vimshell]$ "
 " }}}
 
+" {{{ xml.vim 
+    let makeElementSuf = ',,'
+" }}}
+
 " }}}
 

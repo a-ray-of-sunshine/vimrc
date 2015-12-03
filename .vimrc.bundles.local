@@ -12,5 +12,6 @@
 " Plugin 'vim-scripts/VimTweak'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/vimshell.vim'
+Plugin 'vim-scripts/xml.vim'
 
 " }}}
