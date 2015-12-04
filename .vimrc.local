@@ -106,9 +106,10 @@ let g:ctrlp_custom_ignore = {
 
 " vimshell {{{
    let g:vimshell_prompt = "[vimshell]$ "
+   let g:vimshell_vimshrc_path = "~/.vim.local/.vimshrc"
 " }}}
 
-" {{{ xml.vim 
+" xml.vim {{{ 
     let makeElementSuf = ',,'
 " }}}
 
