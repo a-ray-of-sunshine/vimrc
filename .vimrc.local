@@ -26,6 +26,10 @@ set guioptions-=r
 set guioptions-=L
 
 set guifont=Consolas:h11
+
+" 不在文件尾自动添加空行
+set fixendofline
+autocmd FileType xml setlocal nofixendofline
 " }}}
 
 " Key Mapping {{{
@@ -111,6 +115,10 @@ let g:ctrlp_custom_ignore = {
 
 " xml.vim {{{ 
     let makeElementSuf = ',,'
+" }}}
+
+" minibufexpl {{{
+    let g:miniBufExplSplitBelow = 0
 " }}}
 
 " }}}

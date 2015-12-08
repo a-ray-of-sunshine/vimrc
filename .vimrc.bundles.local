@@ -13,5 +13,6 @@
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/vimshell.vim'
 Plugin 'vim-scripts/xml.vim'
+Plugin 'vim-scripts/minibufexpl.vim'
 
 " }}}
